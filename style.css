@@ -19,7 +19,7 @@
 }
 
 .logo{
-    margin: auto auto auto 1rem;
+    margin: auto auto auto 1.5rem;
 }
 
 .logo img{
@@ -43,7 +43,7 @@
 }
 
 .header-links li{
-    margin: 0.5rem;
+    margin: auto 1.8rem auto 0; 
 }
 
 .header-links li h3{
