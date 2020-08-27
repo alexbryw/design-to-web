@@ -1,3 +1,85 @@
 *{
     margin: 0;
 }
+
+.header{
+    height: 6.25rem; /*100px*/
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo-links-holder{
+    display: flex;
+    align-items: center;
+    width: 60rem; /*960px*/
+}
+
+.logo{
+    margin: auto auto auto 1rem;
+}
+
+.header-links{
+    margin: auto 1rem auto auto;
+}
+
+.header-links ul{
+    display: flex;
+    list-style: none;
+}
+
+.header-links li{
+    margin: 0.5rem;
+}
+
+.masthead{
+    height: 37.5rem; /*600px*/
+    background-image: url("./img/pexels-eberhard-grossgasteiger-2088203.jpg"); /*todo move up*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-info{
+    height: 25rem; /*400px*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-holder{
+    width: 400px;
+    padding: 1rem;
+}
+
+.products{
+    height: 37.5rem; /*600px*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .product{
+    background-color: coral;
+    width: 400px;
+    height: 400px;
+    margin: 1rem;
+}
+
+.contact{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: coral;
+}
