@@ -1,10 +1,11 @@
 *{
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .header{
     height: 6.25rem; /*100px*/
-    background-color: coral;
+    background-color: rgb(247, 148, 29);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,8 +22,19 @@
     margin: auto auto auto 1rem;
 }
 
+.logo img{
+    height: 80px;
+}
+
 .header-links{
+    display: flex;
+    align-items: center;
     margin: auto 1rem auto auto;
+}
+
+.header-links .fa-bars{
+    display: none;
+    font-size: 2rem;
 }
 
 .header-links ul{
@@ -34,12 +46,26 @@
     margin: 0.5rem;
 }
 
+.header-links li h3{
+    font-size: 18pt;
+    font-weight: bold;
+    color: rgb(190, 30, 45);
+}
+
 .masthead{
     height: 37.5rem; /*600px*/
     background-image: url("./img/pexels-eberhard-grossgasteiger-2088203.jpg"); /*todo move up*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.company-name{
+    font-size: 16pt;
+    color: rgb(247, 148, 29);
 }
 
 .company-info{
@@ -54,18 +80,42 @@
     padding: 1rem;
 }
 
+.text-holder h3{
+    font-size: 20pt;
+}
+
 .products{
     height: 37.5rem; /*600px*/
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: #f1f1f1; */
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
-.products .product{
+.product{
     background-color: coral;
     width: 400px;
     height: 400px;
     margin: 1rem;
+}
+
+/* .product img{
+} */
+
+.pro1{
+    background-image: url('./img/jp1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pro2{
+    background-image: url('./img/jp2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .contact{
@@ -81,5 +131,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: coral;
+    background-color: rgb(247, 148, 29);
+}
+
+.soc-media i{
+    text-decoration-style: none;
+    font-size: 2rem;
+    padding: 1rem;
+    color: rgb(190, 30, 45);
+}
+
+
+@media only screen and (max-width:884px){
+
+    .products{
+        flex-direction: column;
+        height: 1100px;
+    }
+}
+
+@media only screen and (max-width:460px){
+    .header-links ul{
+        display: none;
+    }
+
+    .header-links .fa-bars{
+        display: initial;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    .product{
+        height: 320px;
+        width: 320px;
+    }
+
+    .products{
+        height: 800px;
+    }
 }

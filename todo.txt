@@ -1,0 +1,9 @@
+1 .add css mobile break point, split products.
+
+move masthead image to show center.
+add logo img.
+add product img.
+add contact img.
+
+fix colors.
+fix font type/style.
